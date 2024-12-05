@@ -46,6 +46,7 @@ class CommonTextField extends StatelessWidget {
       onSubmitted: onSubmitted,
       decoration: InputDecoration(
         hintText: hintText,
+        hintStyle: TextStyle(color: Colors.black),
         filled: filled,
         fillColor: fillColor ?? Colors.grey[200],
         prefixIcon: prefixIcon,
