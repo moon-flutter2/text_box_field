@@ -16,6 +16,7 @@ class CommonTextField extends StatelessWidget {
   final OutlineInputBorder? border;
   final OutlineInputBorder? focusedBorder;
   final OutlineInputBorder? errorBorder;
+  final TextStyle? textStyle;
 
   const CommonTextField({
     Key? key,
@@ -34,6 +35,7 @@ class CommonTextField extends StatelessWidget {
     this.border,
     this.focusedBorder,
     this.errorBorder,
+    this.textStyle,
   }) : super(key: key);
 
   @override
@@ -46,7 +48,7 @@ class CommonTextField extends StatelessWidget {
       onSubmitted: onSubmitted,
       decoration: InputDecoration(
         hintText: hintText,
-        hintStyle: TextStyle(color: Colors.black),
+        hintStyle: textStyle,
         filled: filled,
         fillColor: fillColor ?? Colors.grey[200],
         prefixIcon: prefixIcon,

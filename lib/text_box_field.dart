@@ -6,7 +6,7 @@ import 'package:text_box_field/common_text_field.dart';
 import 'text_box_field_platform_interface.dart';
 
 class TextBoxField {
-  CommonTextField getPlatformVersion({required TextEditingController controller,required String labelText,required String hintText}) {
-    return CommonTextField(controller: controller,hintText: hintText,);
+  CommonTextField getPlatformVersion({required TextEditingController controller,required String labelText,required String hintText,required TextStyle textStyle}) {
+    return CommonTextField(controller: controller,hintText: hintText,textStyle: textStyle,);
   }
 }
