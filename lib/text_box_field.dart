@@ -19,8 +19,8 @@ class TextBoxField {
   }
 
 
-  TextFormField textField({TextEditingController? controller}){
-    return TextFormField(controller: controller);
+  TextFormField textField({TextEditingController? controller,String? hintText,String? labelText}){
+    return TextFormField(controller: controller,decoration: InputDecoration(hintText: hintText,labelText: labelText),);
   }
 
 }
