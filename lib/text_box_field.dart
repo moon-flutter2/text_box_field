@@ -24,25 +24,48 @@ class TextBoxField {
       color: Colors.blue,
     );
   }
+}
 
-  TextField textField(
-    String hintText,
-    TextEditingController? controller,
-    TextInputType keyboardType,
-    bool isPassword,
-    Widget? prefixIcon,
-    Widget? suffixIcon,
-    String? Function(String?)? validator,
-    Function(String)? onChanged,
-    Function(String)? onSubmitted,
-    Color? fillColor,
-    bool filled,
-    BorderRadius borderRadius,
-    OutlineInputBorder? border,
-    OutlineInputBorder? focusedBorder,
-    OutlineInputBorder? errorBorder,
-    TextStyle? textStyle,
-  ) {
+class TextFieldCustom extends StatelessWidget {
+  const TextFieldCustom({
+    super.key,
+    required this.hintText,
+    required this.controller,
+    required this.keyboardType,
+    required this.isPassword,
+    required this.prefixIcon,
+    required this.suffixIcon,
+    required this.validator,
+    required this.onChanged,
+    required this.onSubmitted,
+    required this.fillColor,
+    required this.filled,
+    required this.borderRadius,
+    required this.border,
+    required this.focusedBorder,
+    required this.errorBorder,
+    required this.textStyle,
+  });
+
+  final String hintText;
+  final TextEditingController? controller;
+  final TextInputType keyboardType;
+  final bool isPassword;
+  final Widget? prefixIcon;
+  final Widget? suffixIcon;
+  final String? Function(String? p1)? validator;
+  final Function(String p1)? onChanged;
+  final Function(String p1)? onSubmitted;
+  final Color? fillColor;
+  final bool filled;
+  final BorderRadius borderRadius;
+  final OutlineInputBorder? border;
+  final OutlineInputBorder? focusedBorder;
+  final OutlineInputBorder? errorBorder;
+  final TextStyle? textStyle;
+
+  @override
+  Widget build(BuildContext context) {
     return TextField(
       controller: controller,
       keyboardType: keyboardType,
