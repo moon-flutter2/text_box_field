@@ -30,5 +30,17 @@ class TextBoxField {
       decoration: BoxDecoration(color: color,borderRadius: BorderRadius.all(Radius.circular(20))),
     );
   }
+  GestureDetector gestureDetectorDemo({VoidCallback? onTap,Color? color,IconData? icon}){
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        height: 50,
+        width: 50,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(30), color: color),
+        child: Icon(icon),
+      ),
+    );
+  }
 
 }
