@@ -22,5 +22,13 @@ class TextBoxField {
   TextFormField textField({TextEditingController? controller,String? hintText,String? labelText}){
     return TextFormField(controller: controller,decoration: InputDecoration(hintText: hintText,labelText: labelText),);
   }
+  
+  Container containerDesign({Color? color}){
+    return Container(
+      height: 200,
+      width: 200,
+      decoration: BoxDecoration(color: color,borderRadius: BorderRadius.all(Radius.circular(20))),
+    );
+  }
 
 }
