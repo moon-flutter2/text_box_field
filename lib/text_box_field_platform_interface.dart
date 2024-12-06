@@ -30,7 +30,7 @@ abstract class TextBoxFieldPlatform extends PlatformInterface {
     throw UnimplementedError('platformVersion() has not been implemented.');
   }
 
-  CommonTextField getTextField({required TextEditingController controller,required String labelText,required String hintText,required TextStyle textStyle}){
+  CommonTextField getTextField({required TextEditingController controller,required String labelText,required String hintText,TextStyle? textStyle}){
     return CommonTextField(controller: controller,hintText: hintText,textStyle: textStyle,);
   }
 }

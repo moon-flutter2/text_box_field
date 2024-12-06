@@ -35,7 +35,7 @@ class _MyAppState extends State<MyApp> {
           ),
           body: Padding(
             padding: const EdgeInsets.all(8.0),
-            child: TextBoxField().getPlatformVersion(
+            child: TextBoxField().getTextField(
               textStyle:TextStyle(color: Colors.black),
                 controller: nameController,
                 labelText: 'Name',
