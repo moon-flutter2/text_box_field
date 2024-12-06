@@ -56,7 +56,7 @@ class TextBoxField {
         children: [
           ClipRRect(
             borderRadius: BorderRadius.vertical(top: Radius.circular(15)),
-            child: Image.network(imageUrl!, height: 150, width: double.infinity, fit: BoxFit.cover),
+            child: Icon(Icons.account_circle,color: Colors.red,size: 20,),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
